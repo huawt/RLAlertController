@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,7 +20,53 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFg-wB-UXX">
+                                <rect key="frame" x="111" y="230" width="153" height="35"/>
+                                <color key="backgroundColor" red="0.24022285060000001" green="1" blue="0.037587358190000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="153" id="Pys-mc-K20"/>
+                                    <constraint firstAttribute="height" constant="35" id="QMx-cf-bsB"/>
+                                </constraints>
+                                <state key="normal" title="修改按钮字体颜色"/>
+                                <connections>
+                                    <action selector="buttonColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hu0-XW-OIZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSb-cU-H3r">
+                                <rect key="frame" x="111" y="130" width="153" height="33"/>
+                                <color key="backgroundColor" red="0.24022285060000001" green="1" blue="0.037587358190000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="h1N-xN-UgU"/>
+                                    <constraint firstAttribute="width" constant="153" id="sdm-jm-V3H"/>
+                                </constraints>
+                                <state key="normal" title="修改AlertMessage"/>
+                                <connections>
+                                    <action selector="alertMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="97j-Sp-9xm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2da-mZ-aof">
+                                <rect key="frame" x="141" y="325" width="93" height="35"/>
+                                <color key="backgroundColor" red="0.24022285060000001" green="1" blue="0.037587358190000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="hFf-hC-omS"/>
+                                    <constraint firstAttribute="width" constant="93" id="sZO-4P-qQP"/>
+                                </constraints>
+                                <state key="normal" title="修改所有"/>
+                                <connections>
+                                    <action selector="allColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pS0-7F-FRl"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iSb-cU-H3r" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="110" id="0QS-Qb-d9j"/>
+                            <constraint firstItem="2da-mZ-aof" firstAttribute="top" secondItem="aFg-wB-UXX" secondAttribute="bottom" constant="60" id="LCL-B9-0RA"/>
+                            <constraint firstItem="iSb-cU-H3r" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fAJ-ZB-jUm"/>
+                            <constraint firstItem="aFg-wB-UXX" firstAttribute="top" secondItem="iSb-cU-H3r" secondAttribute="bottom" constant="67" id="kpU-ed-QxO"/>
+                            <constraint firstItem="aFg-wB-UXX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pGf-Rw-sZd"/>
+                            <constraint firstItem="2da-mZ-aof" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sF5-Dy-aVr"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

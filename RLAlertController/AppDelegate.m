@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  RLAlertController
 //
-//  Created by 华文涛 on 2017/8/18.
+//  Created by huawt on 2017/8/18.
 //  Copyright © 2017年 WinTer. All rights reserved.
 //
 

@@ -13,6 +13,7 @@
 		C86628CB1F467CCA006DCC86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86628C91F467CCA006DCC86 /* Main.storyboard */; };
 		C86628CD1F467CCA006DCC86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C86628CC1F467CCA006DCC86 /* Assets.xcassets */; };
 		C86628D01F467CCA006DCC86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86628CE1F467CCA006DCC86 /* LaunchScreen.storyboard */; };
+		C86628D91F46E577006DCC86 /* UIAlertController+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = C86628D81F46E576006DCC86 /* UIAlertController+Color.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		C86628CC1F467CCA006DCC86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C86628CF1F467CCA006DCC86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C86628D11F467CCA006DCC86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C86628D71F46E576006DCC86 /* UIAlertController+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Color.h"; sourceTree = "<group>"; };
+		C86628D81F46E576006DCC86 /* UIAlertController+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Color.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				C86628C41F467CCA006DCC86 /* AppDelegate.m */,
 				C86628C61F467CCA006DCC86 /* ViewController.h */,
 				C86628C71F467CCA006DCC86 /* ViewController.m */,
+				C86628D71F46E576006DCC86 /* UIAlertController+Color.h */,
+				C86628D81F46E576006DCC86 /* UIAlertController+Color.m */,
 				C86628C91F467CCA006DCC86 /* Main.storyboard */,
 				C86628CC1F467CCA006DCC86 /* Assets.xcassets */,
 				C86628CE1F467CCA006DCC86 /* LaunchScreen.storyboard */,
@@ -110,6 +115,7 @@
 				TargetAttributes = {
 					C86628BC1F467CCA006DCC86 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 99CLF8VRBG;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -150,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C86628D91F46E577006DCC86 /* UIAlertController+Color.m in Sources */,
 				C86628C81F467CCA006DCC86 /* ViewController.m in Sources */,
 				C86628C51F467CCA006DCC86 /* AppDelegate.m in Sources */,
 				C86628C21F467CCA006DCC86 /* main.m in Sources */,
@@ -219,7 +226,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -261,7 +268,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -272,6 +279,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 99CLF8VRBG;
 				INFOPLIST_FILE = RLAlertController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winter.RLAlertController;
@@ -283,6 +291,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 99CLF8VRBG;
 				INFOPLIST_FILE = RLAlertController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winter.RLAlertController;
@@ -309,6 +318,7 @@
 				C86628D61F467CCA006DCC86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
